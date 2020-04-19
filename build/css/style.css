@@ -1005,3 +1005,218 @@ input:invalid {
     line-height: 22px;
   }
 }
+
+.split-aircleaner {
+  padding-top: 166px;
+  padding-bottom: 202px;
+  background-color: #f4ffea;
+  background-image: url("../img/split-ftxm.png");
+  background-repeat: no-repeat;
+  background-size: 684px auto;
+  background-position: left calc(50% + 426px) top 239px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .split-aircleaner {
+    background-image: url("../img/split-ftxm@2x.png");
+  }
+}
+
+.split-aircleaner__container {
+  margin: 0 auto;
+  max-width: 1516px;
+  padding-left: 53px;
+  padding-right: 53px;
+  max-width: 1312px;
+}
+
+@media (max-width: 1399px) {
+  .split-aircleaner__container {
+    padding-left: 5.18%;
+    padding-right: 5.18%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .split-aircleaner__container {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .split-aircleaner__container {
+    padding-left: 6.66%;
+    padding-right: 6.66%;
+  }
+}
+
+@media (max-width: 479px) {
+  .split-aircleaner__container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.split-aircleaner__note {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.split-aircleaner__title {
+  margin: 0;
+  margin-bottom: 20px;
+  width: 704px;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.split-aircleaner__name {
+  margin: 0;
+  margin-bottom: 55px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.split-aircleaner__desc {
+  margin: 0;
+  margin-bottom: 25px;
+  width: 448px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.split-aircleaner__link {
+  width: 210px;
+  padding: 15px 20px;
+}
+
+.split-aircleaner__link span {
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-left: 13px;
+  width: 6px;
+  height: 11px;
+  background-image: url("../img/icon_arrow-right.svg");
+}
+
+@media (max-width: 1299px) {
+  .split-aircleaner {
+    padding-top: 159px;
+    padding-bottom: 138px;
+    background-size: 442px auto;
+    background-position: left calc(50% + 258px) top 336px;
+  }
+  .split-aircleaner__container {
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+  .split-aircleaner__title {
+    margin-bottom: 18px;
+    width: 511px;
+  }
+  .split-aircleaner__name {
+    margin-bottom: 62px;
+  }
+  .split-aircleaner__desc {
+    margin-bottom: 27px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .split-aircleaner {
+    padding-top: 43px;
+    padding-bottom: 376px;
+    background-size: 442px auto;
+    background-position: left calc(50% + 8px) bottom 94px;
+  }
+  .split-aircleaner__note {
+    text-align: center;
+  }
+  .split-aircleaner__title {
+    margin: 0 auto 22px;
+    width: auto;
+    max-width: 646px;
+    text-align: center;
+  }
+  .split-aircleaner__name {
+    margin-bottom: 52px;
+    text-align: center;
+  }
+  .split-aircleaner__desc {
+    width: auto;
+    max-width: 586px;
+    margin: 0 auto 22px;
+    text-align: center;
+  }
+  .split-aircleaner__link {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .split-aircleaner {
+    padding-top: 29px;
+    padding-bottom: 72px;
+    background-size: 338px auto;
+    background-position: left calc(50% + 7px) top 282px;
+  }
+  .split-aircleaner__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .split-aircleaner__note {
+    margin-bottom: 15px;
+  }
+  .split-aircleaner__title {
+    margin: 0 auto 15px;
+    max-width: 440px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .split-aircleaner__name {
+    margin-bottom: 222px;
+  }
+  .split-aircleaner__desc {
+    max-width: 444px;
+    margin: 0 auto 23px;
+  }
+}
+
+@media (max-width: 479px) {
+  .split-aircleaner {
+    padding-top: 21px;
+    padding-bottom: 80px;
+    background-size: 268px auto;
+    background-position: left calc(50% - 2px) top 281px;
+  }
+  .split-aircleaner__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .split-aircleaner__note {
+    margin-bottom: 13px;
+    line-height: 20px;
+  }
+  .split-aircleaner__title {
+    margin: 0 auto 22px;
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .split-aircleaner__name {
+    margin-bottom: 246px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .split-aircleaner__desc {
+    max-width: 288px;
+    margin: 0 auto 16px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
