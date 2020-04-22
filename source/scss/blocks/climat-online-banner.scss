@@ -1,0 +1,220 @@
+.climat-online-banner {
+  position: relative;
+
+  min-height: 820px;
+
+  background-image: url("../img/daichi-climat-online-big.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include retina {
+    background-image: url("../img/daichi-climat-online-big@2x.png");
+  }
+
+  &__note {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__title {
+    width: 460px;
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  &__desc {
+    width: 480px;
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+  }
+
+  &__link {
+    width: 210px;
+    padding: 15px 20px;
+  }
+
+  &__link span {
+    display: inline-block;
+    margin-bottom: -1px;
+    margin-left: 13px;
+    width: 6px;
+    height: 11px;
+
+    background-image: url("../img/icon_arrow-right.svg");
+  }
+}
+
+.climat-online-banner__container {
+  @include container;
+
+  padding-top: 166px;
+  max-width: 1312px;
+}
+
+@include desktop-medium {
+  .climat-online-banner__container {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+}
+
+@media(max-width: 1299px) {
+  .climat-online-banner {
+    background-size: cover;
+    background-position: top center;
+
+    &__desc {
+      width: 430px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .climat-online-banner__container {
+    //padding-top: 263px;
+    max-width: 1024px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+}
+
+@include tablet {
+  .climat-online-banner {
+    min-height: 840px;
+    background:
+      linear-gradient(180deg, #f6f5fb 0, #f6f5fb 400px, transparent 480px),
+      url("../img/daichi-climat-online-big.png") bottom -130px right/1023px auto no-repeat;
+
+    @include retina {
+      background:
+      linear-gradient(180deg, #f6f5fb 0, #f6f5fb 400px, transparent 480px),
+      url("../img/daichi-climat-online-big@2x.png") bottom -130px right/1023px auto no-repeat;
+    }
+
+    &__note {
+      text-align: center;
+    }
+
+    &__title {
+      width: auto;
+      max-width: 480px;
+      margin: 0 auto 25px;
+
+      text-align: center;
+    }
+
+    &__desc {
+      width: auto;
+      max-width: 586px;
+      margin: 0 auto 20px;
+
+      text-align: center;
+    }
+
+    &__link {
+      margin: 0 auto;
+    }
+  }
+
+  .climat-online-banner__container {
+    padding-top: 43px;
+  }
+}
+
+@include mobile-l {
+  .climat-online-banner {
+    min-height: 724px;
+
+    background:
+      linear-gradient(180deg, #f6f5fb 0, #f6f5fb 380px, transparent 480px),
+      url("../img/daichi-climat-online-big.png") bottom -130px right calc(50% + 40px)/850px auto no-repeat;
+
+    @include retina {
+      background:
+      linear-gradient(180deg, #f6f5fb 0, #f6f5fb 380px, transparent 480px),
+      url("../img/daichi-climat-online-big@2x.png") bottom -130px right calc(50% + 40px)/850px auto no-repeat;
+    }
+
+    &__note {
+      width: 380px;
+      margin: 0 auto 15px;
+    }
+
+    &__title {
+      max-width: 440px;
+
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    &__desc {
+      max-width: 440px;
+    }
+  }
+
+  .climat-online-banner__container {
+    padding-top: 29px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@include mobile {
+  .climat-online-banner {
+
+    background:
+      linear-gradient(180deg, #f6f5fb 0, #f6f5fb 420px, transparent 480px),
+      url("../img/daichi-climat-online-big.png") bottom -20px right calc(50% + 60px)/600px auto no-repeat;
+
+    @include retina {
+      background:
+      linear-gradient(180deg, #f6f5fb 0, #f6f5fb 420px, transparent 480px),
+      url("../img/daichi-climat-online-big@2x.png") bottom -20px right calc(50% + 60px)/600px auto no-repeat;
+    }
+
+    // background-size: auto 490px;
+    // background-position: top 75px right calc(50% + 240px);
+    //background-color: #e6e8e7;
+
+    // background:
+    //   linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.6) 100%),
+    // #e6e8e7 url("../img/daichi-comfort-big.png") top 75px right calc(50% + 240px)/auto 490px no-repeat;
+
+    &__note {
+      width: 288px;
+
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &__title {
+      max-width: 288px;
+
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__desc {
+      max-width: 288px;
+    }
+  }
+
+  .climat-online-banner__container {
+    padding-top: 21px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
