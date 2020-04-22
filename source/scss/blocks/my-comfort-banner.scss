@@ -1,0 +1,217 @@
+.my-comfort-banner {
+  position: relative;
+
+  min-height: 820px;
+
+  background-image: url("../img/daichi-comfort-big.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include retina {
+    background-image: url("../img/daichi-comfort-big@2x.png");
+  }
+
+  &__note {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__title {
+    width: 460px;
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  &__desc {
+    width: 480px;
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+  }
+
+  &__link {
+    width: 210px;
+    padding: 15px 20px;
+  }
+
+  &__link span {
+    display: inline-block;
+    margin-bottom: -1px;
+    margin-left: 13px;
+    width: 6px;
+    height: 11px;
+
+    background-image: url("../img/icon_arrow-right.svg");
+  }
+}
+
+.my-comfort-banner__container {
+  @include container;
+
+  padding-top: 166px;
+  max-width: 1312px;
+}
+
+@include desktop-medium {
+  .my-comfort-banner__container {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+}
+
+@media(max-width: 1299px) {
+  .my-comfort-banner {
+    background-size: cover;
+    background-position: top center;
+
+    &__desc {
+      width: 430px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .my-comfort-banner__container {
+    //padding-top: 263px;
+    max-width: 1024px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+}
+
+@include tablet {
+  .my-comfort-banner {
+    min-height: 840px;
+    background:
+      linear-gradient(180deg, #e6e8e7 0, #e6e8e7 400px, transparent 460px),
+      url("../img/daichi-comfort-big.png") bottom -140px right/200% auto no-repeat;
+
+    @include retina {
+      background:
+        linear-gradient(180deg, #e6e8e7 0, #e6e8e7 400px, transparent 460px),
+        url("../img/daichi-comfort-big@2x.png") bottom -140px right/200% auto no-repeat;
+    }
+
+    &__note {
+      text-align: center;
+    }
+
+    &__title {
+      width: auto;
+      max-width: 480px;
+      margin: 0 auto 25px;
+
+      text-align: center;
+    }
+
+    &__desc {
+      width: auto;
+      max-width: 586px;
+      margin: 0 auto 20px;
+
+      text-align: center;
+    }
+
+    &__link {
+      margin: 0 auto;
+    }
+  }
+
+  .my-comfort-banner__container {
+    padding-top: 43px;
+  }
+}
+
+@include mobile-l {
+  .my-comfort-banner {
+    min-height: 724px;
+
+    background:
+      linear-gradient(180deg, #e6e8e7 0, #e6e8e7 360px, transparent 440px),
+      url("../img/daichi-comfort-big.png") bottom -80px right/200% auto no-repeat;
+
+    @include retina {
+      background:
+        linear-gradient(180deg, #e6e8e7 0, #e6e8e7 360px, transparent 440px),
+        url("../img/daichi-comfort-big@2x.png") bottom -80px right/200% auto no-repeat;
+    }
+
+    &__note {
+      margin-bottom: 15px;
+    }
+
+    &__title {
+      max-width: 440px;
+
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    &__desc {
+      max-width: 440px;
+    }
+  }
+
+  .my-comfort-banner__container {
+    padding-top: 29px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@include mobile {
+  .my-comfort-banner {
+
+    background:
+      linear-gradient(180deg, #e6e8e7 0, #e6e8e7 370px, transparent 450px),
+      url("../img/daichi-comfort-big.png") bottom right/200% auto no-repeat;
+
+    @include retina {
+      background:
+        linear-gradient(180deg, #e6e8e7 0, #e6e8e7 370px, transparent 450px),
+        url("../img/daichi-comfort-big@2x.png") bottom right/200% auto no-repeat;
+    }
+
+    // background-size: auto 490px;
+    // background-position: top 75px right calc(50% + 240px);
+    //background-color: #e6e8e7;
+
+    // background:
+    //   linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.6) 100%),
+    // #e6e8e7 url("../img/daichi-comfort-big.png") top 75px right calc(50% + 240px)/auto 490px no-repeat;
+
+    &__note {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &__title {
+      max-width: 288px;
+
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__desc {
+      max-width: 288px;
+    }
+  }
+
+  .my-comfort-banner__container {
+    padding-top: 21px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

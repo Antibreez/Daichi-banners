@@ -1,0 +1,245 @@
+.mobile-control-banner {
+  background: linear-gradient(180deg, #7FB0F8, #D5D3FF);
+}
+
+.mobile-control-banner__container {
+  @include container;
+
+  max-width: 1312px;
+  padding-top: 160px;
+  min-height: 820px;
+
+  background-image: url("../img/app-showcase-icon.png");
+  background-repeat: no-repeat;
+  background-position: top 100px right 53px;
+  background-size: 550px auto;
+
+  @include retina {
+    background-image: url("../img/app-showcase-icon@2x.png");
+  }
+}
+
+.mobile-control-banner__note {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.mobile-control-banner__title {
+  margin: 0;
+  margin-bottom: 45px;
+  max-width: 600px;
+
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.56px;
+}
+
+.mobile-control-banner__description {
+  margin: 0;
+  margin-bottom: 40px;
+  max-width: 600px;
+
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.63px;
+}
+
+.mobile-control-banner__google-pay-link,
+.mobile-control-banner__app-store-link {
+  @include transition;
+
+  display: inline-block;
+  width: 162px;
+  height: 48px;
+  margin-bottom: 32px;
+
+  background-repeat: no-repeat;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.mobile-control-banner__google-pay-link {
+  margin-right: 12px;
+
+  background-image: url("../img/icon_googlepay_white.svg");
+  border: none;
+}
+
+.mobile-control-banner__app-store-link {
+  background-image: url("../img/icon_appstore_white.svg");
+  border: none;
+}
+
+.mobile-control-banner__link {
+  width: 210px;
+  padding: 15px 20px;
+}
+
+.mobile-control-banner__link span {
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-left: 13px;
+  width: 6px;
+  height: 11px;
+
+  background-image: url("../img/icon_arrow-right.svg");
+}
+
+@include desktop-medium {
+  .mobile-control-banner__container{
+    padding-right: 53px;
+    padding-left: 53px;
+  }
+}
+
+@media (max-width: 1299px) {
+  .mobile-control-banner__container {
+    max-width: 1024px;
+    padding-top: 130px;
+
+    background-position: top 70px left calc(50% + 220px);
+  }
+
+  .mobile-control-banner__title {
+    width: 500px;
+
+    letter-spacing: 0px;
+  }
+
+  .mobile-control-banner__description {
+    max-width: 440px;
+
+    font-size: 15px;
+    letter-spacing: 0px;
+  }
+}
+
+@include tablet {
+  .mobile-control-banner__container {
+    padding-top: 43px;
+    min-height: 840px;
+
+    text-align: center;
+
+    background-position: top 240px left calc(50% - 18px);
+    background-size: 340px auto;
+  }
+
+  .mobile-control-banner__note {
+    margin-bottom: 18px;
+  }
+
+  .mobile-control-banner__title {
+    width: auto;
+    max-width: 840px;
+    margin: 0 auto 25px;
+
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .mobile-control-banner__description {
+    max-width: 610px;
+    margin: 0 auto 370px;
+
+    text-align: center;
+  }
+
+  .mobile-control-banner__link {
+    margin: 0 auto;
+  }
+}
+
+@include mobile-l {
+  .mobile-control-banner__container {
+    padding-top: 29px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 72px;
+    min-height: 724px;
+
+    background-position: top 245px left calc(50% - 20px);
+    background-size: 260px auto;
+  }
+
+  .mobile-control-banner__note {
+    margin-bottom: 15px;
+  }
+
+  .mobile-control-banner__title {
+    margin-bottom: 11px;
+    max-width: 440px;
+
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .mobile-control-banner__description {
+    min-height: 62px;
+    margin: 0 auto 275px;
+    max-width: 420px;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .mobile-control-banner__google-pay-link,
+  .mobile-control-banner__app-store-link {
+    margin-bottom: 15px;
+  }
+}
+
+@include mobile {
+  .mobile-control-banner__container {
+    padding-bottom: 93px;
+    padding-top: 21px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    background-position: bottom 180px left calc(50% - 15px);
+    background-size: 258px auto;
+  }
+
+  .mobile-control-banner__note {
+    margin-bottom: 6px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .mobile-control-banner__title {
+    max-width: 100%;
+    width: 288px;
+
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .mobile-control-banner__description {
+    margin-bottom: 267px;
+    width: 288px;
+
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .mobile-control-banner__google-pay-link,
+  .mobile-control-banner__app-store-link {
+    width: 135px;
+    height: 40px;
+
+    background-size: 135px auto;
+  }
+}
