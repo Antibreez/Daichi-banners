@@ -1006,6 +1006,7 @@ input:invalid {
 .split-aircleaner {
   padding-top: 166px;
   padding-bottom: 202px;
+  min-height: 815px;
   background-color: #f4ffea;
   background-image: url("../img/split-ftxm.png");
   background-repeat: no-repeat;
@@ -1101,6 +1102,12 @@ input:invalid {
   background-image: url("../img/icon_arrow-right.svg");
 }
 
+@media (max-width: 950px) {
+  .split-aircleaner {
+    min-height: 840px;
+  }
+}
+
 @media (max-width: 1299px) {
   .split-aircleaner {
     padding-top: 159px;
@@ -1159,6 +1166,7 @@ input:invalid {
   .split-aircleaner {
     padding-top: 29px;
     padding-bottom: 72px;
+    min-height: 700px;
     background-size: 338px auto;
     background-position: left calc(50% + 7px) top 282px;
   }
@@ -1181,6 +1189,12 @@ input:invalid {
   .split-aircleaner__desc {
     max-width: 444px;
     margin: 0 auto 23px;
+  }
+}
+
+@media (max-width: 480px) {
+  .split-aircleaner {
+    min-height: 722px;
   }
 }
 
@@ -1896,5 +1910,819 @@ input:invalid {
     padding-top: 21px;
     padding-left: 16px;
     padding-right: 16px;
+  }
+}
+
+.carbon-banner {
+  position: relative;
+  padding-top: 166px;
+  min-height: 815px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8))), url("../img/promo-carbon-bg.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8)), url("../img/promo-carbon-bg.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.carbon-banner__container {
+  margin: 0 auto;
+  max-width: 1516px;
+  padding-left: 53px;
+  padding-right: 53px;
+  max-width: 1312px;
+}
+
+@media (max-width: 1399px) {
+  .carbon-banner__container {
+    padding-left: 5.18%;
+    padding-right: 5.18%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .carbon-banner__container {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .carbon-banner__container {
+    padding-left: 6.66%;
+    padding-right: 6.66%;
+  }
+}
+
+@media (max-width: 479px) {
+  .carbon-banner__container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.carbon-banner__note {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.carbon-banner__title {
+  margin: 0;
+  margin-bottom: 20px;
+  width: 704px;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  color: #ffffff;
+}
+
+.carbon-banner__name {
+  margin: 0;
+  margin-bottom: 55px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.carbon-banner__desc {
+  margin: 0;
+  margin-bottom: 25px;
+  max-width: 448px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.carbon-banner__link {
+  width: 210px;
+  padding: 15px 20px;
+}
+
+.carbon-banner__link span {
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-left: 13px;
+  width: 6px;
+  height: 11px;
+  background-image: url("../img/icon_arrow-right.svg");
+}
+
+.carbon-banner__image {
+  position: absolute;
+  top: 222px;
+  left: calc(50%);
+  max-width: 698px;
+}
+
+@media (max-width: 1530px) {
+  .carbon-banner__image {
+    max-width: 46%;
+  }
+}
+
+@media (max-width: 1299px) {
+  .carbon-banner {
+    padding-top: 210px;
+  }
+  .carbon-banner__container {
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+  .carbon-banner__desc {
+    max-width: 385px;
+  }
+  .carbon-banner__image {
+    top: 336px;
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .carbon-banner {
+    padding-top: 75px;
+  }
+  .carbon-banner__note {
+    text-align: center;
+  }
+  .carbon-banner__title {
+    margin: 0 auto 22px;
+    width: auto;
+    max-width: 646px;
+    text-align: center;
+  }
+  .carbon-banner__name {
+    text-align: center;
+  }
+  .carbon-banner__desc {
+    width: auto;
+    max-width: 485px;
+    margin: 0 auto 22px;
+    text-align: center;
+  }
+  .carbon-banner__link {
+    margin: 0 auto 97px;
+  }
+  .carbon-banner__image {
+    position: static;
+    margin: 0 auto;
+    max-width: 412px;
+  }
+}
+
+@media (max-width: 950px) {
+  .carbon-banner {
+    min-height: 840px;
+  }
+}
+
+@media (max-width: 767px) {
+  .carbon-banner {
+    padding-top: 40px;
+    min-height: 700px;
+  }
+  .carbon-banner__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .carbon-banner__note {
+    margin-bottom: 15px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .carbon-banner__title {
+    margin: 0 auto 24px;
+    max-width: 440px;
+    font-size: 40px;
+    line-height: 48px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .carbon-banner__name {
+    margin-bottom: 68px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .carbon-banner__desc {
+    max-width: 444px;
+    margin: 0 auto 32px;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .carbon-banner__link {
+    margin-bottom: 0;
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .carbon-banner__image {
+    max-width: 310px;
+    margin-bottom: 40px;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+}
+
+@media (max-width: 480px) {
+  .carbon-banner {
+    min-height: 722px;
+  }
+}
+
+@media (max-width: 479px) {
+  .carbon-banner {
+    padding-top: 21px;
+  }
+  .carbon-banner__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .carbon-banner__note {
+    margin-bottom: 13px;
+    line-height: 20px;
+  }
+  .carbon-banner__title {
+    margin: 0 auto 22px;
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .carbon-banner__name {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .carbon-banner__desc {
+    max-width: 288px;
+    margin: 0 auto 32px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .carbon-banner__image {
+    max-width: 246px;
+    margin-bottom: 53px;
+  }
+}
+
+.x-treme-banner {
+  position: relative;
+  padding-top: 166px;
+  min-height: 815px;
+  background-image: url("../img/x-treme-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.x-treme-banner__container {
+  margin: 0 auto;
+  max-width: 1516px;
+  padding-left: 53px;
+  padding-right: 53px;
+  max-width: 1312px;
+}
+
+@media (max-width: 1399px) {
+  .x-treme-banner__container {
+    padding-left: 5.18%;
+    padding-right: 5.18%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .x-treme-banner__container {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .x-treme-banner__container {
+    padding-left: 6.66%;
+    padding-right: 6.66%;
+  }
+}
+
+@media (max-width: 479px) {
+  .x-treme-banner__container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.x-treme-banner__note {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.x-treme-banner__title {
+  margin: 0;
+  margin-bottom: 20px;
+  width: 704px;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  color: #ffffff;
+}
+
+.x-treme-banner__name {
+  margin: 0;
+  margin-bottom: 55px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.x-treme-banner__desc {
+  margin: 0;
+  margin-bottom: 25px;
+  max-width: 448px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.x-treme-banner__link {
+  width: 210px;
+  padding: 15px 20px;
+}
+
+.x-treme-banner__link span {
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-left: 13px;
+  width: 6px;
+  height: 11px;
+  background-image: url("../img/icon_arrow-right.svg");
+}
+
+.x-treme-banner__image {
+  position: absolute;
+  top: 230px;
+  left: calc(50% + 73px);
+  max-width: 695px;
+}
+
+@media (max-width: 1630px) {
+  .x-treme-banner__image {
+    max-width: 42.6%;
+  }
+}
+
+@media (max-width: 1299px) {
+  .x-treme-banner {
+    padding-top: 182px;
+  }
+  .x-treme-banner__container {
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+  .x-treme-banner__title {
+    max-width: 427px;
+  }
+  .x-treme-banner__desc {
+    max-width: 385px;
+  }
+  .x-treme-banner__image {
+    top: 336px;
+    max-width: 43%;
+    left: calc(50% + 17px);
+  }
+}
+
+@media (max-width: 1023px) {
+  .x-treme-banner {
+    padding-top: 75px;
+  }
+  .x-treme-banner__note {
+    text-align: center;
+  }
+  .x-treme-banner__title {
+    margin: 0 auto 22px;
+    width: auto;
+    max-width: 646px;
+    text-align: center;
+  }
+  .x-treme-banner__name {
+    text-align: center;
+  }
+  .x-treme-banner__desc {
+    width: auto;
+    max-width: 485px;
+    margin: 0 auto 22px;
+    text-align: center;
+  }
+  .x-treme-banner__link {
+    margin: 0 auto 97px;
+  }
+  .x-treme-banner__image {
+    position: static;
+    margin: 0 auto;
+    max-width: 442px;
+  }
+}
+
+@media (max-width: 950px) {
+  .x-treme-banner {
+    min-height: 840px;
+  }
+}
+
+@media (max-width: 767px) {
+  .x-treme-banner {
+    padding-top: 40px;
+    min-height: 700px;
+  }
+  .x-treme-banner__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .x-treme-banner__note {
+    margin-bottom: 15px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .x-treme-banner__title {
+    margin: 0 auto 24px;
+    max-width: 440px;
+    font-size: 40px;
+    line-height: 48px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .x-treme-banner__name {
+    margin-bottom: 80px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .x-treme-banner__desc {
+    max-width: 400px;
+    margin: 0 auto 32px;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .x-treme-banner__link {
+    margin-bottom: 0;
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .x-treme-banner__image {
+    max-width: 310px;
+    margin-bottom: 40px;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+}
+
+@media (max-width: 480px) {
+  .x-treme-banner {
+    min-height: 722px;
+  }
+}
+
+@media (max-width: 479px) {
+  .x-treme-banner {
+    padding-top: 21px;
+  }
+  .x-treme-banner__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .x-treme-banner__note {
+    margin-bottom: 13px;
+    line-height: 20px;
+  }
+  .x-treme-banner__title {
+    margin: 0 auto 22px;
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .x-treme-banner__name {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .x-treme-banner__desc {
+    max-width: 288px;
+    margin: 0 auto 32px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .x-treme-banner__image {
+    max-width: 246px;
+    margin-bottom: 53px;
+  }
+}
+
+.everest-banner {
+  position: relative;
+  padding-top: 166px;
+  min-height: 815px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2))), url("../img/everest-bg.jpg") top calc(50% + 100px) center/cover no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2)), url("../img/everest-bg.jpg") top calc(50% + 100px) center/cover no-repeat;
+}
+
+.everest-banner__container {
+  margin: 0 auto;
+  max-width: 1516px;
+  padding-left: 53px;
+  padding-right: 53px;
+  max-width: 1312px;
+}
+
+@media (max-width: 1399px) {
+  .everest-banner__container {
+    padding-left: 5.18%;
+    padding-right: 5.18%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .everest-banner__container {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .everest-banner__container {
+    padding-left: 6.66%;
+    padding-right: 6.66%;
+  }
+}
+
+@media (max-width: 479px) {
+  .everest-banner__container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.everest-banner__note {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.everest-banner__title {
+  margin: 0;
+  margin-bottom: 20px;
+  width: 704px;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  color: #ffffff;
+}
+
+.everest-banner__name {
+  margin: 0;
+  margin-bottom: 48px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.everest-banner__desc {
+  margin: 0;
+  margin-bottom: 25px;
+  max-width: 448px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.everest-banner__link {
+  width: 210px;
+  padding: 15px 20px;
+}
+
+.everest-banner__link span {
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-left: 13px;
+  width: 6px;
+  height: 11px;
+  background-image: url("../img/icon_arrow-right.svg");
+}
+
+.everest-banner__image {
+  position: absolute;
+  top: 170px;
+  left: calc(50% + 28px);
+  max-width: 769px;
+}
+
+@media (max-width: 1630px) {
+  .everest-banner__image {
+    max-width: 47.2%;
+  }
+}
+
+@media (max-width: 1530px) {
+  .everest-banner {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2))), url("../img/everest-bg.jpg") top calc(50% + 100px) center/1630px auto no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2)), url("../img/everest-bg.jpg") top calc(50% + 100px) center/1630px auto no-repeat;
+  }
+}
+
+@media (max-width: 1299px) {
+  .everest-banner {
+    padding-top: 160px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2))), url("../img/everest-bg.jpg") top center/1630px auto no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2)), url("../img/everest-bg.jpg") top center/1630px auto no-repeat;
+  }
+  .everest-banner__container {
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+  .everest-banner__title {
+    max-width: 427px;
+  }
+  .everest-banner__desc {
+    max-width: 385px;
+  }
+  .everest-banner__image {
+    top: 267px;
+    max-width: 50.3%;
+    left: calc(50% - 19px);
+  }
+}
+
+@media (max-width: 1023px) {
+  .everest-banner {
+    padding-top: 75px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2))), url("../img/everest-bg.jpg") top -20px center/1370px auto no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2)), url("../img/everest-bg.jpg") top -20px center/1370px auto no-repeat;
+  }
+  .everest-banner__note {
+    text-align: center;
+  }
+  .everest-banner__title {
+    margin: 0 auto 22px;
+    width: auto;
+    max-width: 646px;
+    text-align: center;
+  }
+  .everest-banner__name {
+    text-align: center;
+  }
+  .everest-banner__desc {
+    width: auto;
+    max-width: 460px;
+    margin: 0 auto 22px;
+    text-align: center;
+  }
+  .everest-banner__link {
+    margin: 0 auto 48px;
+  }
+  .everest-banner__image {
+    position: static;
+    margin: 0 auto;
+    max-width: 498px;
+  }
+}
+
+@media (max-width: 950px) {
+  .everest-banner {
+    min-height: 840px;
+  }
+}
+
+@media (max-width: 767px) {
+  .everest-banner {
+    padding-top: 40px;
+    min-height: 700px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4))), url("../img/everest-bg.jpg") top center/1370px auto no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4)), url("../img/everest-bg.jpg") top center/1370px auto no-repeat;
+  }
+  .everest-banner__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .everest-banner__note {
+    margin-bottom: 15px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .everest-banner__title {
+    margin: 0 auto 24px;
+    max-width: 440px;
+    font-size: 40px;
+    line-height: 48px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .everest-banner__name {
+    margin-bottom: 23px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .everest-banner__desc {
+    max-width: 380px;
+    margin: 0 auto 32px;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .everest-banner__link {
+    margin-bottom: 0;
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .everest-banner__image {
+    max-width: 310px;
+    margin-bottom: 32px;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+}
+
+@media (max-width: 480px) {
+  .everest-banner {
+    min-height: 722px;
+  }
+}
+
+@media (max-width: 479px) {
+  .everest-banner {
+    padding-top: 21px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4))), url("../img/everest-bg.jpg") top center/1120px auto no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4)), url("../img/everest-bg.jpg") top center/1120px auto no-repeat;
+  }
+  .everest-banner__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .everest-banner__note {
+    margin-bottom: 13px;
+    line-height: 20px;
+  }
+  .everest-banner__title {
+    margin: 0 auto 22px;
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .everest-banner__name {
+    margin-bottom: 46px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .everest-banner__desc {
+    max-width: 288px;
+    margin: 0 auto 32px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .everest-banner__image {
+    max-width: 246px;
+    margin-bottom: 39px;
   }
 }

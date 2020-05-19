@@ -1,0 +1,286 @@
+.everest-banner {
+  position: relative;
+
+  padding-top: 166px;
+  min-height: 815px;
+
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2)),
+    url('../img/everest-bg.jpg') top calc(50% + 100px) center/cover no-repeat;
+
+  &__container {
+    @include container;
+
+    max-width: 1312px;
+  }
+
+  &__note {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    opacity: 0.5;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 704px;
+
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 64px;
+    color: #ffffff;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 48px;
+
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 25px;
+    max-width: 448px;
+
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+  }
+
+  &__link {
+    width: 210px;
+    padding: 15px 20px;
+  }
+
+  &__link span {
+    display: inline-block;
+    margin-bottom: -1px;
+    margin-left: 13px;
+    width: 6px;
+    height: 11px;
+
+    background-image: url("../img/icon_arrow-right.svg");
+  }
+
+  &__image {
+    position: absolute;
+    top: 170px;
+    left: calc(50% + 28px);
+
+    max-width: 769px;
+  }
+}
+
+@media (max-width: 1630px) {
+  .everest-banner {
+    &__image {
+      max-width: 47.2%;
+    }
+  }
+}
+
+@media (max-width: 1530px) {
+  .everest-banner {
+    background:
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2)),
+      url('../img/everest-bg.jpg') top calc(50% + 100px) center/1630px auto no-repeat;
+  }
+}
+
+@media(max-width: 1299px) {
+  .everest-banner {
+    padding-top: 160px;
+    background:
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2)),
+      url('../img/everest-bg.jpg') top center/1630px auto no-repeat;
+
+    &__container {
+      padding-left: 57px;
+      padding-right: 57px;
+    }
+
+    &__title {
+      max-width: 427px;
+    }
+
+    &__desc {
+      max-width: 385px;
+    }
+
+    &__image {
+      top: 267px;
+
+      max-width: 50.3%;
+      left: calc(50% - 19px);
+    }
+  }
+}
+
+@include tablet {
+  .everest-banner {
+    padding-top: 75px;
+    background:
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2)),
+      url('../img/everest-bg.jpg') top -20px center/1370px auto no-repeat;
+
+    &__note {
+      text-align: center;
+    }
+
+    &__title {
+      margin: 0 auto 22px;
+      width: auto;
+      max-width: 646px;
+
+      text-align: center;
+    }
+
+    &__name {
+      text-align: center;
+    }
+
+    &__desc {
+      width: auto;
+      max-width: 460px;
+      margin: 0 auto 22px;
+
+      text-align: center;
+    }
+
+    &__link {
+      margin: 0 auto 48px;
+    }
+
+    &__image {
+      position: static;
+      margin: 0 auto;
+
+      max-width: 498px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .everest-banner {
+    min-height: 840px;
+  }
+}
+
+@include mobile-l {
+  .everest-banner {
+    padding-top: 40px;
+    min-height: 700px;
+    background:
+      linear-gradient(0deg, rgba(0, 0, 0, 0.4)),
+      url('../img/everest-bg.jpg') top center/1370px auto no-repeat;
+
+    &__container {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__note {
+      margin-bottom: 15px;
+
+      order: 1;
+    }
+
+    &__title {
+      margin: 0 auto 24px;
+      max-width: 440px;
+
+      font-size: 40px;
+      line-height: 48px;
+
+      order: 2;
+    }
+
+    &__name {
+      margin-bottom: 23px;
+
+      order: 3;
+    }
+
+    &__desc {
+      max-width: 380px;
+      margin: 0 auto 32px;
+
+      order: 5;
+    }
+
+    &__link {
+      margin-bottom: 0;
+      order: 6;
+    }
+
+    &__image {
+      max-width: 310px;
+      margin-bottom: 32px;
+
+      order: 4;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .everest-banner {
+    min-height: 722px;
+  }
+}
+
+@include mobile {
+  .everest-banner {
+    padding-top: 21px;
+    background:
+      linear-gradient(0deg, rgba(0, 0, 0, 0.4)),
+      url('../img/everest-bg.jpg') top center/1120px auto no-repeat;
+
+    &__container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    &__note {
+      margin-bottom: 13px;
+
+      line-height: 20px;
+    }
+
+    &__title {
+      margin: 0 auto 22px;
+      max-width: 288px;
+
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__name {
+      margin-bottom: 46px;
+
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &__desc {
+      max-width: 288px;
+      margin: 0 auto 32px;
+
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &__image {
+      max-width: 246px;
+      margin-bottom: 39px;
+    }
+  }
+}
