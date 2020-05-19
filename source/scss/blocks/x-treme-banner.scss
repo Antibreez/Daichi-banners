@@ -1,18 +1,14 @@
-.split-aircleaner {
+.x-treme-banner {
+  position: relative;
+
   padding-top: 166px;
-  padding-bottom: 202px;
   min-height: 815px;
 
-  background-color: #f4ffea;
+  background-image: url('../img/x-treme-bg.jpg');
 
-  background-image: url("../img/split-ftxm.png");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 684px auto;
-  background-position: left calc(50% + 426px) top 239px;
-
-  @include retina {
-    background-image: url("../img/split-ftxm@2x.png");
-  }
 
   &__container {
     @include container;
@@ -26,7 +22,8 @@
 
     font-size: 16px;
     line-height: 24px;
-    color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    opacity: 0.5;
   }
 
   &__title {
@@ -37,6 +34,7 @@
     font-weight: 300;
     font-size: 56px;
     line-height: 64px;
+    color: #ffffff;
   }
 
   &__name {
@@ -45,15 +43,17 @@
 
     font-size: 20px;
     line-height: 28px;
+    color: #ffffff;
   }
 
   &__desc {
     margin: 0;
     margin-bottom: 25px;
-    width: 448px;
+    max-width: 448px;
 
     font-size: 16px;
     line-height: 26px;
+    color: #ffffff;
   }
 
   &__link {
@@ -70,21 +70,27 @@
 
     background-image: url("../img/icon_arrow-right.svg");
   }
+
+  &__image {
+    position: absolute;
+    top: 230px;
+    left: calc(50% + 73px);
+
+    max-width: 695px;
+  }
 }
 
-@media (max-width: 950px) {
-  .split-aircleaner {
-    min-height: 840px;
+@media (max-width: 1630px) {
+  .x-treme-banner {
+    &__image {
+      max-width: 42.6%;
+    }
   }
 }
 
 @media(max-width: 1299px) {
-  .split-aircleaner {
-    padding-top: 159px;
-    padding-bottom: 138px;
-
-    background-size: 442px auto;
-    background-position: left calc(50% + 258px) top 336px;
+  .x-treme-banner {
+    padding-top: 182px;
 
     &__container {
       padding-left: 57px;
@@ -92,27 +98,25 @@
     }
 
     &__title {
-      margin-bottom: 18px;
-      width: 511px;
-    }
-
-    &__name {
-      margin-bottom: 62px;
+      max-width: 427px;
     }
 
     &__desc {
-      margin-bottom: 27px;
+      max-width: 385px;
+    }
+
+    &__image {
+      top: 336px;
+
+      max-width: 43%;
+      left: calc(50% + 17px);
     }
   }
 }
 
 @include tablet {
-  .split-aircleaner {
-    padding-top: 43px;
-    padding-bottom: 376px;
-
-    background-size: 442px auto;
-    background-position: left calc(50% + 8px) bottom 94px;
+  .x-treme-banner {
+    padding-top: 75px;
 
     &__note {
       text-align: center;
@@ -127,75 +131,100 @@
     }
 
     &__name {
-      margin-bottom: 52px;
-
       text-align: center;
     }
 
     &__desc {
       width: auto;
-      max-width: 586px;
+      max-width: 485px;
       margin: 0 auto 22px;
 
       text-align: center;
     }
 
     &__link {
+      margin: 0 auto 97px;
+    }
+
+    &__image {
+      position: static;
       margin: 0 auto;
+
+      max-width: 442px;
     }
   }
 }
 
-@include mobile-l {
-  .split-aircleaner {
-    padding-top: 29px;
-    padding-bottom: 72px;
-    min-height: 700px;
+@media (max-width: 950px) {
+  .x-treme-banner {
+    min-height: 840px;
+  }
+}
 
-    background-size: 338px auto;
-    background-position: left calc(50% + 7px) top 282px;
+@include mobile-l {
+  .x-treme-banner {
+    padding-top: 40px;
+    min-height: 700px;
 
     &__container {
       padding-left: 20px;
       padding-right: 20px;
+      display: flex;
+      flex-direction: column;
     }
 
     &__note {
       margin-bottom: 15px;
+
+      order: 1;
     }
 
     &__title {
-      margin: 0 auto 15px;
+      margin: 0 auto 24px;
       max-width: 440px;
 
       font-size: 40px;
       line-height: 48px;
+
+      order: 2;
     }
 
     &__name {
-      margin-bottom: 222px;
+      margin-bottom: 80px;
+
+      order: 3;
     }
 
     &__desc {
-      max-width: 444px;
-      margin: 0 auto 23px;
+      max-width: 400px;
+      margin: 0 auto 32px;
+
+      order: 5;
+    }
+
+    &__link {
+      margin-bottom: 0;
+      order: 6;
+    }
+
+    &__image {
+      max-width: 310px;
+      margin-bottom: 40px;
+
+      order: 4;
     }
   }
 }
 
 @media (max-width: 480px) {
-  .split-aircleaner {
+  .x-treme-banner {
     min-height: 722px;
   }
 }
 
 @include mobile {
-  .split-aircleaner {
+  .x-treme-banner {
     padding-top: 21px;
-    padding-bottom: 80px;
-
-    background-size: 268px auto;
-    background-position: left calc(50% - 2px) top 281px;
 
     &__container {
       padding-left: 16px;
@@ -217,7 +246,7 @@
     }
 
     &__name {
-      margin-bottom: 246px;
+      margin-bottom: 50px;
 
       font-size: 16px;
       line-height: 28px;
@@ -225,10 +254,15 @@
 
     &__desc {
       max-width: 288px;
-      margin: 0 auto 16px;
+      margin: 0 auto 32px;
 
       font-size: 14px;
       line-height: 22px;
+    }
+
+    &__image {
+      max-width: 246px;
+      margin-bottom: 53px;
     }
   }
 }
