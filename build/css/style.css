@@ -2762,6 +2762,7 @@ input:invalid {
 
 .new-programs__item {
   width: 23.7%;
+  list-style: none !important;
 }
 
 .new-programs__link {
