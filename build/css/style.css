@@ -2782,11 +2782,11 @@ input:invalid {
 }
 
 .new-programs__img--mobile-control {
-  width: 92%;
+  width: 84%;
 }
 
 .new-programs__img--climat-online {
-  width: 76%;
+  width: 69%;
 }
 
 .new-programs__img--my-comfort {
@@ -2794,7 +2794,11 @@ input:invalid {
 }
 
 .new-programs__img--my-comfort-plus {
-  width: 86%;
+  width: 78%;
+}
+
+.new-programs__img--service {
+  width: 96%;
 }
 
 @media (max-width: 1023px) {
