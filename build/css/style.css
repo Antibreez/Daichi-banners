@@ -375,6 +375,7 @@ html {
 body {
   min-width: 320px;
   margin: 0 auto;
+  font-family: "Gotham Pro", "Arial", "Helvetica", "Helvetica CY", "Nimbus Sans";
   font-style: normal;
 }
 
@@ -2841,5 +2842,761 @@ input:invalid {
   }
   .new-programs__item:nth-child(n) {
     margin-right: 0;
+  }
+}
+
+.my-comfort-plus-banner {
+  position: relative;
+  min-height: 815px;
+  background-image: url("../img/daichi-comfort-big.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .my-comfort-plus-banner {
+    background-image: url("../img/daichi-comfort-big@2x.png");
+  }
+}
+
+.my-comfort-plus-banner__note, .my-comfort-plus-banner__note--mobile {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.53px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.my-comfort-plus-banner__note--mobile {
+  display: none;
+}
+
+.my-comfort-plus-banner__title, .my-comfort-plus-banner__title--mobile {
+  max-width: 570px;
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.my-comfort-plus-banner__title--mobile {
+  display: none;
+}
+
+.my-comfort-plus-banner__desc {
+  max-width: 570px;
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.63px;
+}
+
+.my-comfort-plus-banner__link {
+  width: 215px;
+  padding: 15px 20px;
+}
+
+.my-comfort-plus-banner__link span {
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-left: 13px;
+  width: 6px;
+  height: 11px;
+  background-image: url("../img/icon_arrow-right.svg");
+}
+
+.my-comfort-plus-banner__container {
+  margin: 0 auto;
+  max-width: 1516px;
+  padding-left: 53px;
+  padding-right: 53px;
+  padding-top: 230px;
+  max-width: 1312px;
+}
+
+@media (max-width: 1399px) {
+  .my-comfort-plus-banner__container {
+    padding-left: 5.18%;
+    padding-right: 5.18%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .my-comfort-plus-banner__container {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .my-comfort-plus-banner__container {
+    padding-left: 6.66%;
+    padding-right: 6.66%;
+  }
+}
+
+@media (max-width: 479px) {
+  .my-comfort-plus-banner__container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 1399px) {
+  .my-comfort-plus-banner__container {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+}
+
+@media (max-width: 1299px) {
+  .my-comfort-plus-banner {
+    background-size: cover;
+    background-position: top center;
+  }
+  .my-comfort-plus-banner__title {
+    margin-bottom: 25px;
+  }
+  .my-comfort-plus-banner__desc {
+    max-width: 525px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0;
+  }
+  .my-comfort-plus-banner__container {
+    max-width: 1024px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+}
+
+@media (max-width: 950px) {
+  .my-comfort-plus-banner {
+    min-height: 840px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .my-comfort-plus-banner {
+    background: linear-gradient(180deg, #e7e9e8 0, #e7e9e8 200px, rgba(231, 233, 232, 0) 60%), url("../img/daichi-comfort-big.png") bottom -120px right/200% auto no-repeat;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .my-comfort-plus-banner {
+    background: linear-gradient(180deg, #e7e9e8 0, #e7e9e8 200px, rgba(231, 233, 232, 0) 60%), url("../img/daichi-comfort-big@2x.png") bottom -120px right/200% auto no-repeat;
+  }
+}
+
+@media (max-width: 1023px) {
+  .my-comfort-plus-banner__note {
+    text-align: center;
+  }
+  .my-comfort-plus-banner__title {
+    width: auto;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+  .my-comfort-plus-banner__desc {
+    max-width: 705px;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+  .my-comfort-plus-banner__link {
+    margin: 0 auto;
+  }
+  .my-comfort-plus-banner__container {
+    padding-top: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .my-comfort-plus-banner {
+    min-height: 700px;
+    background: linear-gradient(180deg, #e7e9e8 0, #e7e9e8 300px, rgba(231, 233, 232, 0) 440px), url("../img/daichi-comfort-big.png") bottom -80px right/200% auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .my-comfort-plus-banner {
+    background: linear-gradient(180deg, #e7e9e8 0, #e7e9e8 300px, rgba(231, 233, 232, 0) 440px), url("../img/daichi-comfort-big@2x.png") bottom -80px right/200% auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .my-comfort-plus-banner__note {
+    display: none;
+  }
+  .my-comfort-plus-banner__note--mobile {
+    display: block;
+    margin: 0 auto 25px;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.53px;
+    text-align: center;
+  }
+  .my-comfort-plus-banner__title {
+    display: none;
+  }
+  .my-comfort-plus-banner__title--mobile {
+    display: block;
+    margin: 0 auto 25px;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+  }
+  .my-comfort-plus-banner__desc {
+    display: none;
+  }
+  .my-comfort-plus-banner__container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-comfort-plus-banner {
+    min-height: 722px;
+  }
+}
+
+@media (max-width: 479px) {
+  .my-comfort-plus-banner {
+    background: linear-gradient(180deg, #e7e9e8 0, #e7e9e8 300px, rgba(231, 233, 232, 0) 450px), url("../img/daichi-comfort-big.png") bottom -80px right -80px/280% auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 479px) and (min-resolution: 144dpi), (max-width: 479px) and (min-resolution: 1.5dppx) {
+  .my-comfort-plus-banner {
+    background: linear-gradient(180deg, #e7e9e8 0, #e7e9e8 300px, rgba(231, 233, 232, 0) 450px), url("../img/daichi-comfort-big@2x.png") bottom -80px right -80px/280% auto no-repeat;
+  }
+}
+
+@media (max-width: 479px) {
+  .my-comfort-plus-banner__note {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .my-comfort-plus-banner__title--mobile {
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .my-comfort-plus-banner__desc {
+    max-width: 288px;
+  }
+  .my-comfort-plus-banner__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.prog-climat-online-banner {
+  position: relative;
+  min-height: 815px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #f6f5fb), color-stop(40%, #f6f5fb), color-stop(60%, rgba(246, 245, 251, 0))), #f6f5fb url("../img/climat-online-bg.jpg") top right/auto 900px no-repeat;
+  background: linear-gradient(90deg, #f6f5fb 0, #f6f5fb 40%, rgba(246, 245, 251, 0) 60%), #f6f5fb url("../img/climat-online-bg.jpg") top right/auto 900px no-repeat;
+}
+
+.prog-climat-online-banner__note, .prog-climat-online-banner__note--mobile {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.53px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.prog-climat-online-banner__note--mobile {
+  display: none;
+}
+
+.prog-climat-online-banner__title, .prog-climat-online-banner__title--mobile {
+  max-width: 690px;
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.prog-climat-online-banner__title--mobile {
+  display: none;
+}
+
+.prog-climat-online-banner__desc {
+  max-width: 690px;
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.63px;
+}
+
+.prog-climat-online-banner__link {
+  width: 215px;
+  padding: 15px 20px;
+}
+
+.prog-climat-online-banner__link span {
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-left: 13px;
+  width: 6px;
+  height: 11px;
+  background-image: url("../img/icon_arrow-right.svg");
+}
+
+.prog-climat-online-banner__container {
+  margin: 0 auto;
+  max-width: 1516px;
+  padding-left: 53px;
+  padding-right: 53px;
+  padding-top: 205px;
+  max-width: 1312px;
+}
+
+@media (max-width: 1399px) {
+  .prog-climat-online-banner__container {
+    padding-left: 5.18%;
+    padding-right: 5.18%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .prog-climat-online-banner__container {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .prog-climat-online-banner__container {
+    padding-left: 6.66%;
+    padding-right: 6.66%;
+  }
+}
+
+@media (max-width: 479px) {
+  .prog-climat-online-banner__container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 1399px) {
+  .prog-climat-online-banner__container {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+}
+
+@media (max-width: 1299px) {
+  .prog-climat-online-banner {
+    background: #f6f5fb url("../img/climat-online-bg.jpg") top left calc(50% + 30px)/cover no-repeat;
+  }
+  .prog-climat-online-banner__title {
+    margin-bottom: 25px;
+  }
+  .prog-climat-online-banner__desc {
+    max-width: 530px;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0;
+  }
+  .prog-climat-online-banner__container {
+    max-width: 1024px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+}
+
+@media (max-width: 950px) {
+  .prog-climat-online-banner {
+    min-height: 840px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .prog-climat-online-banner {
+    min-height: 840px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f5fb), color-stop(40%, #f6f5fb), color-stop(60%, rgba(246, 245, 251, 0))), #f6f5fb url("../img/climat-online-bg.jpg") top calc(50% + 240px) center/1023px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 40%, rgba(246, 245, 251, 0) 60%), #f6f5fb url("../img/climat-online-bg.jpg") top calc(50% + 240px) center/1023px auto no-repeat;
+  }
+  .prog-climat-online-banner__note {
+    text-align: center;
+  }
+  .prog-climat-online-banner__title {
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+  .prog-climat-online-banner__desc {
+    max-width: 705px;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+  .prog-climat-online-banner__desc span {
+    display: inline-block;
+    max-width: 470px;
+  }
+  .prog-climat-online-banner__link {
+    margin: 0 auto;
+  }
+  .prog-climat-online-banner__container {
+    padding-top: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .prog-climat-online-banner {
+    min-height: 700px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f5fb), color-stop(43%, #f6f5fb), color-stop(55%, rgba(246, 245, 251, 0))), #f6f5fb url("../img/climat-online-bg.jpg") top calc(50% + 210px) left 50%/780px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 43%, rgba(246, 245, 251, 0) 55%), #f6f5fb url("../img/climat-online-bg.jpg") top calc(50% + 210px) left 50%/780px auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) and (max-width: 610px) {
+  .prog-climat-online-banner {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f5fb), color-stop(43%, #f6f5fb), color-stop(55%, rgba(246, 245, 251, 0))), #f6f5fb url("../img/climat-online-bg.jpg") top calc(50% + 210px) right -80px/780px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 43%, rgba(246, 245, 251, 0) 55%), #f6f5fb url("../img/climat-online-bg.jpg") top calc(50% + 210px) right -80px/780px auto no-repeat;
+  }
+}
+
+@media (max-width: 767px) {
+  .prog-climat-online-banner__note {
+    display: none;
+  }
+  .prog-climat-online-banner__note--mobile {
+    display: block;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+  .prog-climat-online-banner__title {
+    display: none;
+  }
+  .prog-climat-online-banner__title--mobile {
+    display: block;
+    font-size: 42px;
+    line-height: 46px;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+  .prog-climat-online-banner__desc {
+    display: none;
+  }
+  .prog-climat-online-banner__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .prog-climat-online-banner {
+    min-height: 722px;
+  }
+}
+
+@media (max-width: 479px) {
+  .prog-climat-online-banner {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f6f5fb), color-stop(40%, #f6f5fb), color-stop(50%, rgba(246, 245, 251, 0))), #f6f5fb url("../img/climat-online-bg.jpg") top calc(50% + 140px) left calc(50% - 45px)/670px auto no-repeat;
+    background: linear-gradient(180deg, #f6f5fb 0, #f6f5fb 40%, rgba(246, 245, 251, 0) 50%), #f6f5fb url("../img/climat-online-bg.jpg") top calc(50% + 140px) left calc(50% - 45px)/670px auto no-repeat;
+  }
+  .prog-climat-online-banner__note--mobile {
+    margin-bottom: 15px;
+  }
+  .prog-climat-online-banner__title--mobile {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .prog-climat-online-banner__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.mobile-control-banner-new {
+  min-height: 815px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#7FB0F8), to(#D5D3FF));
+  background: linear-gradient(180deg, #7FB0F8, #D5D3FF);
+}
+
+.mobile-control-banner-new__container {
+  margin: 0 auto;
+  max-width: 1516px;
+  padding-left: 53px;
+  padding-right: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1312px;
+  padding-top: 70px;
+}
+
+@media (max-width: 1399px) {
+  .mobile-control-banner-new__container {
+    padding-left: 5.18%;
+    padding-right: 5.18%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .mobile-control-banner-new__container {
+    padding-left: 4.17%;
+    padding-right: 4.17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-control-banner-new__container {
+    padding-left: 6.66%;
+    padding-right: 6.66%;
+  }
+}
+
+@media (max-width: 479px) {
+  .mobile-control-banner-new__container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.mobile-control-banner-new__content {
+  padding-top: 150px;
+}
+
+.mobile-control-banner-new__link-box {
+  width: 560px;
+  padding-top: 570px;
+  padding-left: 150px;
+  margin-left: auto;
+  background-image: url("../img/app-showcase-icon.png");
+  background-repeat: no-repeat;
+  background-position: top -40px right;
+  background-size: 100% auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .mobile-control-banner-new__link-box {
+    background-image: url("../img/app-showcase-icon@2x.png");
+  }
+}
+
+.mobile-control-banner-new__title {
+  margin: 0;
+  margin-bottom: 50px;
+  max-width: 440px;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 60px;
+}
+
+.mobile-control-banner-new__description {
+  margin: 0;
+  margin-bottom: 50px;
+  max-width: 570px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.63px;
+}
+
+.mobile-control-banner-new__google-pay-link,
+.mobile-control-banner-new__app-store-link {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: inline-block;
+  width: 162px;
+  height: 48px;
+  margin-bottom: 32px;
+  background-repeat: no-repeat;
+}
+
+.mobile-control-banner-new__google-pay-link:hover,
+.mobile-control-banner-new__app-store-link:hover {
+  opacity: 0.8;
+}
+
+.mobile-control-banner-new__google-pay-link:active,
+.mobile-control-banner-new__app-store-link:active {
+  opacity: 0.5;
+}
+
+.mobile-control-banner-new__google-pay-link {
+  margin-right: 12px;
+  background-image: url("../img/icon_googlepay_white.svg");
+  border: none;
+}
+
+.mobile-control-banner-new__app-store-link {
+  background-image: url("../img/icon_appstore_white.svg");
+  border: none;
+}
+
+.mobile-control-banner-new__link {
+  width: 215px;
+  padding: 15px 20px;
+}
+
+.mobile-control-banner-new__link span {
+  display: inline-block;
+  margin-bottom: -1px;
+  margin-left: 13px;
+  width: 6px;
+  height: 11px;
+  background-image: url("../img/icon_arrow-right.svg");
+}
+
+@media (max-width: 1399px) {
+  .mobile-control-banner-new__container {
+    padding-right: 53px;
+    padding-left: 53px;
+  }
+}
+
+@media (max-width: 1299px) {
+  .mobile-control-banner-new__container {
+    max-width: 1024px;
+    padding-top: 120px;
+    background-position: top 70px left calc(50% + 220px);
+  }
+  .mobile-control-banner-new__content {
+    padding-top: 100px;
+  }
+  .mobile-control-banner-new__link-box {
+    width: 444px;
+    padding-top: 480px;
+    padding-left: 80px;
+    background-position: top -20px right;
+  }
+  .mobile-control-banner-new__title {
+    margin-bottom: 25px;
+    letter-spacing: 0px;
+  }
+  .mobile-control-banner-new__description {
+    max-width: 440px;
+    font-size: 15px;
+    letter-spacing: 0px;
+  }
+}
+
+@media (max-width: 950px) {
+  .mobile-control-banner-new {
+    min-height: 840px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .mobile-control-banner-new__container {
+    padding-top: 45px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: center;
+  }
+  .mobile-control-banner-new__content {
+    padding-top: 0;
+  }
+  .mobile-control-banner-new__link-box {
+    width: 440px;
+    padding-top: 450px;
+    padding-left: 90px;
+    margin-left: -100px;
+    background-position: top right;
+    background-size: 400px auto;
+  }
+  .mobile-control-banner-new__note {
+    margin-bottom: 18px;
+  }
+  .mobile-control-banner-new__title {
+    width: auto;
+    max-width: 840px;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+  .mobile-control-banner-new__description {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+  .mobile-control-banner-new__link {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-control-banner-new {
+    min-height: 700px;
+  }
+  .mobile-control-banner-new__link-box {
+    width: 400px;
+    padding-top: 285px;
+    padding-left: 30px;
+    margin-left: -30px;
+    background-position: top -10px right 53%;
+    background-size: 270px auto;
+  }
+  .mobile-control-banner-new__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .mobile-control-banner-new__description {
+    max-width: 420px;
+  }
+  .mobile-control-banner-new__google-pay-link,
+  .mobile-control-banner-new__app-store-link {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-control-banner-new {
+    min-height: 722px;
+  }
+}
+
+@media (max-width: 479px) {
+  .mobile-control-banner-new__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .mobile-control-banner-new__link-box {
+    width: 320px;
+    padding-top: 285px;
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 0;
+    line-height: 0;
+    background-position: top -10px right 84%;
+    background-size: 270px auto;
+  }
+  .mobile-control-banner-new__title {
+    max-width: 100%;
+    width: 288px;
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .mobile-control-banner-new__description {
+    width: 288px;
+    margin-bottom: 15px;
+  }
+  .mobile-control-banner-new__google-pay-link,
+  .mobile-control-banner-new__app-store-link {
+    width: 135px;
+    height: 40px;
+    background-size: 135px auto;
   }
 }

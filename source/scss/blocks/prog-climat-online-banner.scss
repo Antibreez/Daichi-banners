@@ -1,0 +1,263 @@
+.prog-climat-online-banner {
+  position: relative;
+
+  min-height: 815px;
+
+  background:
+    linear-gradient(90deg, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 40%, rgba(246, 245, 251, 0) 60%),
+    #f6f5fb url("../img/climat-online-bg.jpg") top right/auto 900px no-repeat;
+
+  // background-image: url("../img/climat-online-bg.jpg");
+  // background-repeat: no-repeat;
+  // background-position: top right;
+  // background-size: auto 900px;
+
+  &__note,
+  &__note--mobile {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.53px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  &__note--mobile {
+    display: none;
+  }
+
+  &__title,
+  &__title--mobile {
+    max-width: 690px;
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  &__title--mobile {
+    display: none;
+  }
+
+  &__desc {
+    max-width: 690px;
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.63px;
+  }
+
+  &__link {
+    width: 215px;
+    padding: 15px 20px;
+  }
+
+  &__link span {
+    display: inline-block;
+    margin-bottom: -1px;
+    margin-left: 13px;
+    width: 6px;
+    height: 11px;
+
+    background-image: url("../img/icon_arrow-right.svg");
+  }
+}
+
+.prog-climat-online-banner__container {
+  @include container;
+
+  padding-top: 205px;
+  max-width: 1312px;
+}
+
+@include desktop-medium {
+  .prog-climat-online-banner__container {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+}
+
+@media(max-width: 1299px) {
+  .prog-climat-online-banner {
+    background: #f6f5fb url("../img/climat-online-bg.jpg") top left calc(50% + 30px)/cover no-repeat;
+    // background-size: cover;
+    // background-position: top center;
+
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    &__desc {
+      max-width: 530px;
+
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0;
+    }
+  }
+
+  .prog-climat-online-banner__container {
+    //padding-top: 263px;
+    max-width: 1024px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+}
+
+@media (max-width: 950px) {
+  .prog-climat-online-banner {
+    min-height: 840px;
+  }
+}
+
+@include tablet {
+  .prog-climat-online-banner {
+    min-height: 840px;
+
+    background:
+      linear-gradient(180deg, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 40%, rgba(246, 245, 251, 0) 60%),
+      #f6f5fb url("../img/climat-online-bg.jpg") top calc(50% + 240px) center/1023px auto no-repeat;
+
+    &__note {
+      text-align: center;
+    }
+
+    &__title {
+      margin: 0 auto 25px;
+      text-align: center;
+    }
+
+    &__desc {
+      max-width: 705px;
+      margin: 0 auto 25px;
+
+      text-align: center;
+
+      & span {
+        display: inline-block;
+        max-width: 470px;
+      }
+    }
+
+    &__link {
+      margin: 0 auto;
+    }
+  }
+
+  .prog-climat-online-banner__container {
+    padding-top: 45px;
+  }
+}
+
+@include mobile-l {
+  .prog-climat-online-banner {
+    min-height: 700px;
+
+    background:
+      linear-gradient(180deg, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 43%, rgba(246, 245, 251, 0) 55%),
+      #f6f5fb url("../img/climat-online-bg.jpg") top calc(50% + 210px) left 50%/780px auto no-repeat;
+
+    @media (max-width: 610px) {
+      background:
+      linear-gradient(180deg, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 43%, rgba(246, 245, 251, 0) 55%),
+      #f6f5fb url("../img/climat-online-bg.jpg") top calc(50% + 210px) right -80px/780px auto no-repeat;
+    }
+
+    // background:
+    //   linear-gradient(180deg, #f6f5fb 0, #f6f5fb 380px, transparent 480px),
+    //   url("../img/daichi-climat-online-big.png") bottom -130px right calc(50% + 40px)/850px auto no-repeat;
+
+    // @include retina {
+    //   background:
+    //   linear-gradient(180deg, #f6f5fb 0, #f6f5fb 380px, transparent 480px),
+    //   url("../img/daichi-climat-online-big@2x.png") bottom -130px right calc(50% + 40px)/850px auto no-repeat;
+    // }
+
+    &__note {
+      display: none;
+    }
+
+    &__note--mobile {
+      display: block;
+      margin: 0 auto 25px;
+
+      text-align: center;
+    }
+
+    &__title {
+      display: none;
+    }
+
+    &__title--mobile {
+      display: block;
+      font-size: 42px;
+      line-height: 46px;
+      margin: 0 auto 25px;
+
+      text-align: center;
+    }
+
+    &__desc {
+      display: none;
+    }
+  }
+
+  .prog-climat-online-banner__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .prog-climat-online-banner {
+    min-height: 722px;
+  }
+}
+
+@include mobile {
+  .prog-climat-online-banner {
+
+    background:
+      linear-gradient(180deg, rgba(246, 245, 251, 1) 0, rgba(246, 245, 251, 1) 40%, rgba(246, 245, 251, 0) 50%),
+      #f6f5fb url("../img/climat-online-bg.jpg") top calc(50% + 140px) left calc(50% - 45px)/670px auto no-repeat;
+
+    // background:
+    //   linear-gradient(180deg, #f6f5fb 0, #f6f5fb 420px, transparent 480px),
+    //   url("../img/daichi-climat-online-big.png") bottom -20px right calc(50% + 60px)/600px auto no-repeat;
+
+    // @include retina {
+    //   background:
+    //   linear-gradient(180deg, #f6f5fb 0, #f6f5fb 420px, transparent 480px),
+    //   url("../img/daichi-climat-online-big@2x.png") bottom -20px right calc(50% + 60px)/600px auto no-repeat;
+    // }
+
+    // background-size: auto 490px;
+    // background-position: top 75px right calc(50% + 240px);
+    //background-color: #e6e8e7;
+
+    // background:
+    //   linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.6) 100%),
+    // #e6e8e7 url("../img/daichi-comfort-big.png") top 75px right calc(50% + 240px)/auto 490px no-repeat;
+
+    &__note--mobile {
+      margin-bottom: 15px;
+    }
+
+    &__title--mobile {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  .prog-climat-online-banner__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

@@ -1,0 +1,261 @@
+.my-comfort-plus-banner {
+  position: relative;
+
+  min-height: 815px;
+
+  background-image: url("../img/daichi-comfort-big.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: url("../img/daichi-comfort-big@2x.png");
+  }
+
+  &__note,
+  &__note--mobile {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.53px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  &__note--mobile {
+    display: none;
+  }
+
+  &__title,
+  &__title--mobile {
+    max-width: 570px;
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  &__title--mobile {
+    display: none;
+  }
+
+  &__desc {
+    max-width: 570px;
+    margin: 0;
+    margin-bottom: 50px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.63px;
+  }
+
+  &__link {
+    width: 215px;
+    padding: 15px 20px;
+  }
+
+  &__link span {
+    display: inline-block;
+    margin-bottom: -1px;
+    margin-left: 13px;
+    width: 6px;
+    height: 11px;
+
+    background-image: url("../img/icon_arrow-right.svg");
+  }
+}
+
+.my-comfort-plus-banner__container {
+  @include container;
+
+  padding-top: 230px;
+  max-width: 1312px;
+}
+
+@include desktop-medium {
+  .my-comfort-plus-banner__container {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+}
+
+@media(max-width: 1299px) {
+  .my-comfort-plus-banner {
+    background-size: cover;
+    background-position: top center;
+
+    &__title {
+      margin-bottom: 25px;
+    }
+
+    &__desc {
+      max-width: 525px;
+      margin-bottom: 50px;
+
+      font-size: 15px;
+      line-height: 23px;
+      letter-spacing: 0;
+    }
+  }
+
+  .my-comfort-plus-banner__container {
+    //padding-top: 263px;
+    max-width: 1024px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+}
+
+@media (max-width: 950px) {
+  .my-comfort-plus-banner {
+    min-height: 840px;
+  }
+}
+
+@include tablet {
+  .my-comfort-plus-banner {
+    //min-height: 840px;
+    background:
+      linear-gradient(180deg, rgba(231, 233, 232, 1) 0, rgba(231, 233, 232, 1) 200px, rgba(231, 233, 232, 0) 60%),
+      url("../img/daichi-comfort-big.png") bottom -120px right/200% auto no-repeat;
+
+    @include retina {
+      background:
+        linear-gradient(180deg, rgba(231, 233, 232, 1) 0, rgba(231, 233, 232, 1) 200px, rgba(231, 233, 232, 0) 60%),
+        url("../img/daichi-comfort-big@2x.png") bottom -120px right/200% auto no-repeat;
+    }
+
+    &__note {
+      text-align: center;
+    }
+
+    &__title {
+      width: auto;
+      margin: 0 auto 25px;
+
+      text-align: center;
+    }
+
+    &__desc {
+      max-width: 705px;
+      margin: 0 auto 25px;
+
+      text-align: center;
+    }
+
+    &__link {
+      margin: 0 auto;
+    }
+  }
+
+  .my-comfort-plus-banner__container {
+    padding-top: 45px;
+  }
+}
+
+@include mobile-l {
+  .my-comfort-plus-banner {
+    min-height: 700px;
+
+    background:
+      linear-gradient(180deg, rgba(231, 233, 232, 1) 0, rgba(231, 233, 232, 1) 300px, rgba(231, 233, 232, 0) 440px),
+      url("../img/daichi-comfort-big.png") bottom -80px right/200% auto no-repeat;
+
+    @include retina {
+      background:
+        linear-gradient(180deg, rgba(231, 233, 232, 1) 0, rgba(231, 233, 232, 1) 300px, rgba(231, 233, 232, 0) 440px),
+        url("../img/daichi-comfort-big@2x.png") bottom -80px right/200% auto no-repeat;
+    }
+
+    &__note {
+      display: none;
+    }
+
+    &__note--mobile {
+      display: block;
+      margin: 0 auto 25px;
+
+      font-size: 15px;
+      line-height: 16px;
+      letter-spacing: 0.53px;
+      text-align: center;
+    }
+
+    &__title {
+      display: none;
+    }
+
+    &__title--mobile {
+      display: block;
+      //max-width: 440px;
+      margin: 0 auto 25px;
+
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+    }
+
+    &__desc {
+      display: none;
+    }
+  }
+
+  .my-comfort-plus-banner__container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-comfort-plus-banner {
+    min-height: 722px;
+  }
+}
+
+@include mobile {
+  .my-comfort-plus-banner {
+
+    background:
+      linear-gradient(180deg, rgba(231, 233, 232, 1) 0, rgba(231, 233, 232, 1) 300px, rgba(231, 233, 232, 0) 450px),
+      url("../img/daichi-comfort-big.png") bottom -80px right -80px/280% auto no-repeat;
+
+    @include retina {
+      background:
+        linear-gradient(180deg, rgba(231, 233, 232, 1) 0, rgba(231, 233, 232, 1) 300px, rgba(231, 233, 232, 0) 450px),
+        url("../img/daichi-comfort-big@2x.png") bottom -80px right -80px/280% auto no-repeat;
+    }
+
+    // background-size: auto 490px;
+    // background-position: top 75px right calc(50% + 240px);
+    //background-color: #e6e8e7;
+
+    // background:
+    //   linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.6) 100%),
+    // #e6e8e7 url("../img/daichi-comfort-big.png") top 75px right calc(50% + 240px)/auto 490px no-repeat;
+
+    &__note {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &__title--mobile {
+      max-width: 288px;
+
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__desc {
+      max-width: 288px;
+    }
+  }
+
+  .my-comfort-plus-banner__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
